@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+main {
+    width: 100%;
+    max-width: 550px;
+}
+
+form {
+    width: 100%;
+    background-color: #faf8f8;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px #00000011;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form h2 {
+    font-size: 28px;
+    color: #1020af;
+    text-align: center;
+    margin-bottom: -12px;
+}
+
+form p {
+    font-size: 15px;
+    color: #666;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.inputContainer label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+}
+
+.inputContainer input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #333;
+    background-color: #fafafa;
+    outline: none;
+}
+
+.inputContainer input::placeholder {
+    color: #9ca3af;
+}
+
+.inputContainer input:focus {
+    border-color: #7c3aed;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 5px #b088f71f;
+}
+
+/* Campo válido */
+.inputContainer input.valido {
+    background-color: #e8f8ed;
+    border: 1px solid #28a745;
+}
+
+/* Campo inválido */
+.inputContainer input.invalido {
+    background-color: #fdeaea;
+    border: 1px solid #dc3545;
+}
+
+/* Mensagem abaixo do input */
+.mensagem {
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+/* Mensagem de sucesso */
+.mensagem.valido {
+    color: #218838;
+}
+
+/* Mensagem de erro */
+.mensagem.invalido {
+    color: #dc3545;
+}

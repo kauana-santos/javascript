@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório de Regex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form>
+            <h2>Laboratório de Regex</h2>
+            <p>Digite nos campos abaixo para testar 5 validações diferentes</p>
+
+            <div class="inputContainer">
+                <label for="email">1. E-mail (Ex: teste@email.com)</label>
+                <input type="email" id="email" placeholder="Digite um email...">
+                <small id="mensagemEmail" class="mensagem"></small>
+            </div>
+
+            <div class="inputContainer">
+                <label for="cep">2. CEP (Formato: 00000-000)</label>
+                <input id="cep" type="text" placeholder="00000-000">
+                <small id="mensagemCep" class="mensagem"></small>
+            </div>
+
+            <div class="inputContainer">
+                <label for="tel">3. Celular (Formato (00) 00000-0000)</label>
+                <input id="tel" type="text" placeholder="(00) 00000-0000">
+                <small id="mensagemTel" class="mensagem"></small>
+            </div>
+
+            <div class="inputContainer">
+                <label for="numeros">4. Apenas Números (Ex: 12345)</label>
+                <input id="numeros" type="text" placeholder="Digite apenas números">
+                <small id="mensagemNum" class="mensagem"></small>
+            </div>
+
+            <div class="inputContainer">
+                <label for="nome">5. Nomes (Apenas letras e espaços)</label>
+                <input id="nome" type="text" placeholder="Seu nome completo...">
+                <small id="mensagemNome" class="mensagem"></small>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
